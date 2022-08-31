@@ -56,7 +56,7 @@ export const skillsImage = (skill) => {
             return qt;
         case 'ubuntu':
             return ubuntu;
-        case 'MongoDB':
+        case 'mongo':
             return mongo;
         case 'websocket':
             return websocket;
@@ -66,7 +66,7 @@ export const skillsImage = (skill) => {
             return nextjs;
         case 'expressjs':
             return express;
-        case 'MaterialUI':
+        case 'materialui':
             return materialui;
         case 'redux':
             return redux;
