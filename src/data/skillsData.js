@@ -6,7 +6,7 @@
     'React',
     'Django',
     'MaterialUI',
-    'MongoDb',
+    'MongoDB',
     'sass',
     'nodejs',
     'expressjs',

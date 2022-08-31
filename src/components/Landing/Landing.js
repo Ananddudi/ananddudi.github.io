@@ -135,7 +135,7 @@ function Landing() {
                     >
                         <h6>{headerData.title}</h6>
                         <h1>{headerData.name}</h1>
-                        <p>{headerData.desciption}<i style={{float:"right"}}>-Elon Musk</i></p>
+                        <p>{headerData.desciption}</p>
 
                         <div className='lcr-buttonContainer'>
                             <NavLink
