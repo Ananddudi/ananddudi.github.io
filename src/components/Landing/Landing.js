@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Button } from "@material-ui/core";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 import { makeStyles } from "@material-ui/core/styles";
@@ -7,6 +7,7 @@ import "./Landing.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { headerData } from "../../data/headerData";
 import { socialsData } from "../../data/socialsData";
+import backgroundimage from "../../assets/myimage/images-small.jpg";
 
 import {
   FaTwitter,
@@ -18,6 +19,7 @@ import {
 
 function Landing() {
   const { theme, drawerOpen } = useContext(ThemeContext);
+  const [load, setLoaded] = useState(false);
 
   const useStyles = makeStyles((t) => ({
     resumeBtn: {
@@ -67,6 +69,10 @@ function Landing() {
 
   const classes = useStyles();
 
+  const handleImageLoad = () => {
+    setLoaded(true);
+  };
+
   return (
     <div className="landing">
       <div className="landing--container">
@@ -104,14 +110,22 @@ function Landing() {
             )}
           </div>
         </div>
+        <div
+          className={`back-image ${load && "loaded"}`}
+          style={{
+            backgroundImage: `url(${backgroundimage})`,
+          }}
+        ></div>
         <img
           src={headerData.image}
+          loading="lazy"
           alt=""
           className="landing--img"
           style={{
             opacity: `${drawerOpen ? "0" : "1"}`,
             borderColor: theme.secondary,
           }}
+          onLoad={handleImageLoad}
         />
         <div
           className="landing--container-right"

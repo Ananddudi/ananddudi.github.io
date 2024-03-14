@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width:100%;
+  width: 100%;
   position: relative;
 }
 
@@ -22,9 +22,32 @@
   width: var(--img-size);
   height: var(--img-size);
   object-fit: cover;
+  object-position: center;
   border-radius: 50%;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   transition: opacity 0.3s;
+}
+
+.back-image {
+  background-size: cover;
+  background-position: center;
+  --img-size: 400px;
+  position: absolute;
+  left: 35%;
+  transform: translateX(-50%);
+  width: var(--img-size);
+  height: var(--img-size);
+  object-fit: cover;
+  object-position: center;
+  z-index: 9;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.loaded {
+  opacity: 0;
+  z-index: 0;
+  transition: z-index 500ms ease-in-out, opacity 500ms ease-in-out;
 }
 
 .landing--container-left {
