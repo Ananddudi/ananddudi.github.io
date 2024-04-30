@@ -50,9 +50,7 @@ function Projects() {
           style={{ backgroundColor: theme.secondary }}
         >
           <div className="projects--header">
-            <h1 style={{ color: theme.primary }}>
-              Initial Custom Dummy projects
-            </h1>
+            <h1 style={{ color: theme.primary }}>Custom projects</h1>
           </div>
           <div className="projects--body">
             <div className="projects--bodyContainer">

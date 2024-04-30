@@ -8,7 +8,6 @@ import {
   About,
   Skills,
   Education,
-  Contacts,
   Projects,
 } from "../../components";
 import { headerData } from "../../data/headerData";

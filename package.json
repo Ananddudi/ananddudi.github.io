@@ -1,6 +1,7 @@
 {
   "homepage": "https://ananddudi.github.io/",
-  "name": "developer-portfolio",
+  "name": "anand-dudi-portfolio",
+  "description": "This is custom project portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
